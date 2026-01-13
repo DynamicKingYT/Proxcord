@@ -1,9 +1,0 @@
-com\proxcord\free\bedrock\BedrockDetector.class
-com\proxcord\free\voice\VoiceChannelManager.class
-com\proxcord\free\gui\VoiceGuiListener.class
-com\proxcord\free\proximity\ProximityManager$1.class
-com\proxcord\free\linking\LinkingManager.class
-com\proxcord\free\discord\DiscordBot.class
-com\proxcord\free\ProxcordFreePlugin.class
-com\proxcord\free\proximity\ProximityManager.class
-com\proxcord\free\gui\VoiceGui.class
