@@ -27,7 +27,7 @@
 
 ## 📋 Requirements
 * **Java 17+**
-* **Spigot/Paper/Purpur 1.16+**
+* **Spigot/Paper 1.20+**
 * **Geyser & Floodgate** (Required for Bedrock support)
 
 ## ⚖️ License
