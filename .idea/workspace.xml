@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="68c3073e-c4f1-4033-a239-88901c79d24b" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotChats">
+    <option name="panelChat">
+      <chat>
+        <option name="activeSessionId" value="c0b36bc3-5078-4bf7-9504-98248f003ebe" />
+        <option name="sessions">
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="d43a3e68-8382-4e0c-bacc-2cc73328d55c" />
+            <option name="modeId" value="Ask" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="gpt-4o" />
+            <option name="status" value="Completed" />
+            <option name="targetType" value="LOCAL" />
+          </session>
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="c0b36bc3-5078-4bf7-9504-98248f003ebe" />
+            <option name="modeId" value="Agent" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="auto" />
+            <option name="targetType" value="LOCAL" />
+          </session>
+        </option>
+        <option name="type" value="PANEL" />
+      </chat>
+    </option>
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_D:/DynamicKing/PC/CODING/InteliJ/Proxcord-Free" value="35qEr0UlakkRi1QzdWRHjJuWsYZ" />
+    </persistenceIdMap>
+  </component>
+  <component name="CopilotUserSelectedChatMode">
+    <option name="chatModeId" value="Agent" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="temurin-17" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="21" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="35qEr0UlakkRi1QzdWRHjJuWsYZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.D:/DynamicKing/PC/CODING/InteliJ/Proxcord-Free [build].executor": "Run",
+    "Gradle.D:/DynamicKing/PC/CODING/InteliJ/Proxcord-Free [bumpPatchVersion].executor": "Run",
+    "Gradle.D:/DynamicKing/PC/CODING/InteliJ/Proxcord-Free [clean build].executor": "Run",
+    "Gradle.D:/DynamicKing/PC/CODING/InteliJ/Proxcord-Free [updateVersionInPluginYml].executor": "Run",
+    "Maven.proxcord-free [-U,clean,install].executor": "Run",
+    "Maven.proxcord-free [clean,install,-U].executor": "Run",
+    "Maven.proxcord-free [clean].executor": "Run",
+    "Maven.proxcord-free [install].executor": "Run",
+    "Maven.proxcord-free [package].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/DynamicKing/PC/CODING/InteliJ/Proxcord-Free",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn -U clean install" />
+      <command value="mvn clean install -U" />
+      <command value="mvn clean" />
+      <command value="./gradlew bumpPatchVersion " />
+      <command value="./gradlew build " />
+      <command value="version = '1.0.3'  // Changed from 1.0.2  // In your build.gradle task updateVersionInPluginYml {     doLast {         def pluginYml = file('src/main/resources/plugin.yml')         def content = pluginYml.text         def newContent = content.replaceAll('version: .*', &quot;version: ${project.version}&quot;)         pluginYml.write(newContent)     } }  // Run this before building tasks.build.dependsOn updateVersionInPluginYml  task bumpPatchVersion {     doLast {         def currentVersion = project.version         def versionParts = currentVersion.split('\\.')         def major = versionParts[0]         def minor = versionParts[1]          def patch = versionParts[2] as Integer         def newPatch = patch + 1         def newVersion = &quot;${major}.${minor}.${newPatch}&quot;                  println &quot;Bumping version from ${currentVersion} to ${newVersion}&quot;                  // Update build.gradle         def buildFile = file('build.gradle')         def content = buildFile.text         def newContent = content.replace(&quot;version = '${currentVersion}'&quot;, &quot;version = '${newVersion}'&quot;)         buildFile.write(newContent)     } } " />
+      <command value="./gradlew clean build " />
+      <command value="./gradlew clean build" />
+      <command value="./gradlew updateVersionInPluginYml " />
+    </option>
+  </component>
+  <component name="RunManager" selected="Gradle.D:/DynamicKing/PC/CODING/InteliJ/Proxcord-Free [updateVersionInPluginYml]">
+    <configuration name="D:/DynamicKing/PC/CODING/InteliJ/Proxcord-Free [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="D:/DynamicKing/PC/CODING/InteliJ/Proxcord-Free [bumpPatchVersion]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bumpPatchVersion" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="D:/DynamicKing/PC/CODING/InteliJ/Proxcord-Free [clean build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="D:/DynamicKing/PC/CODING/InteliJ/Proxcord-Free [updateVersionInPluginYml]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="updateVersionInPluginYml" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Proxcord-Free" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Proxcord-Free" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.D:/DynamicKing/PC/CODING/InteliJ/Proxcord-Free [updateVersionInPluginYml]" />
+        <item itemvalue="Gradle.D:/DynamicKing/PC/CODING/InteliJ/Proxcord-Free [clean build]" />
+        <item itemvalue="Gradle.D:/DynamicKing/PC/CODING/InteliJ/Proxcord-Free [build]" />
+        <item itemvalue="Gradle.D:/DynamicKing/PC/CODING/InteliJ/Proxcord-Free [bumpPatchVersion]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.28238.7" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="68c3073e-c4f1-4033-a239-88901c79d24b" name="Changes" comment="" />
+      <created>1763829401996</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1763829401996</updated>
+      <workItem from="1763829404115" duration="5010000" />
+      <workItem from="1763834464671" duration="1192000" />
+      <workItem from="1763886617590" duration="2163000" />
+      <workItem from="1763889165071" duration="3719000" />
+      <workItem from="1763893538892" duration="209000" />
+      <workItem from="1763902525390" duration="6642000" />
+      <workItem from="1763916921304" duration="1559000" />
+      <workItem from="1764169136211" duration="2707000" />
+      <workItem from="1764261279660" duration="24000" />
+      <workItem from="1764337160726" duration="3526000" />
+      <workItem from="1764340967481" duration="770000" />
+      <workItem from="1765093306231" duration="4062000" />
+      <workItem from="1765538069415" duration="593000" />
+      <workItem from="1765540033350" duration="2637000" />
+      <workItem from="1765544689839" duration="3270000" />
+      <workItem from="1767421702553" duration="11000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:net.kyori:adventure-api" />
+    <option featureType="dependencySupport" implementationName="java:io.papermc.paper:paper-api" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>

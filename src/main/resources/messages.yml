@@ -1,0 +1,15 @@
+# Proxcord Language File
+# Support: & (Legacy Colors) or <color> (Modern MiniMessage)
+prefix: "&8[&bProxcord&8] &7"
+no-permission: "&cYou do not have permission to use this."
+only-players: "&cOnly players can use this command."
+reload-success: "&aConfiguration and language files reloaded!"
+voice-gui-opened: "&eOpening voice settings..."
+command-usage: "&cUsage: /voice [reload]"
+status-linked: "&aLinked"
+status-unlinked: "&cNot Linked"
+
+# NEW MESSAGES
+global-mode-enabled: "&aGlobal voice mode enabled."
+proximity-mode-enabled: "&eProximity voice mode enabled."
+invalid-mode: "&cInvalid mode. Use 'global' or 'proximity'."

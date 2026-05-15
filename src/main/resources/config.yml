@@ -1,0 +1,19 @@
+# ==========================
+# Proxcord FREE - Config
+# ==========================
+
+proximity:
+  # Max distance in blocks where players are considered "near"
+  range: 15
+
+  # How often to scan (in ticks). 20 ticks = 1 second
+  scan-interval-ticks: 20
+
+discord:
+  # These MUST be filled by each server owner
+  guild-id: "000000000000000000"        # Discord server ID
+  near-channel-id: "000000000000000000" # Voice channel for 'near' players
+  global-channel-id: "000000000000000000" # Voice channel for all players (global mode)
+
+# Voice mode: "global" or "proximity"
+voice-mode: "global"

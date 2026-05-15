@@ -1,0 +1,20 @@
+name: ProxcordFree
+version: 1.0.0
+main: com.proxcord.free.ProxcordFreePlugin
+api-version: 1.16
+depend: [DiscordSRV]
+author: DynamicKingYT
+
+commands:
+  voice:
+    description: Open the Proxcord voice settings menu.
+    usage: /voice [reload|global on|off]
+    permission: proxcord.voice
+
+permissions:
+  proxcord.voice:
+    description: Allows players to open the voice GUI.
+    default: true
+  proxcord.admin:
+    description: Allows admins to manage voice settings.
+    default: op
