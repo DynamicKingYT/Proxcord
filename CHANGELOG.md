@@ -1,4 +1,4 @@
-# Proxcord Free Changelog
+# Proxcord  Changelog
 
 ## v1.0.2 - 2024-01-20
 ### Added
