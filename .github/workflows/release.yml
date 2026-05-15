@@ -1,0 +1,90 @@
+name: Release to GitHub & Platforms
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+          cache: 'maven'
+
+      - name: Build with Maven
+        run: mvn clean package
+
+      - name: Get version from tag
+        id: get_version
+        run: |
+          VERSION=${GITHUB_REF#refs/tags/v}
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+
+      - name: Get CHANGELOG.md content
+        id: changelog
+        run: |
+          if [ -f CHANGELOG.md ]; then
+            echo "changelog<<EOF" >> $GITHUB_ENV
+            cat CHANGELOG.md >> $GITHUB_ENV
+            echo "EOF" >> $GITHUB_ENV
+          else
+            echo "changelog=Automated release of Proxcord Free v${{ env.VERSION }}" >> $GITHUB_ENV
+          fi
+
+      - name: Create GitHub Release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "target/*.jar"
+          body: ${{ env.changelog }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish to Modrinth
+        if: success() && env.MODRINTH_TOKEN != ''
+        uses: Kir-Antipov/mc-publish@v3.0
+        with:
+          modrinth-id: ${{ secrets.MODRINTH_ID }}
+          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+          files: target/*.jar
+          name: Proxcord Free v${{ env.VERSION }}
+          version: ${{ env.VERSION }}
+          game-versions: |
+            1.16.5
+            1.18.2
+            1.19.4
+            1.20.4
+          loaders: |
+            paper
+            spigot
+          changelog: ${{ env.changelog }}
+
+      - name: Publish to CurseForge
+        if: success() && env.CURSEFORGE_TOKEN != ''
+        uses: Kir-Antipov/mc-publish@v3.0
+        with:
+          curseforge-id: ${{ secrets.CURSEFORGE_ID }}
+          curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
+          files: target/*.jar
+          name: Proxcord Free v${{ env.VERSION }}
+          version: ${{ env.VERSION }}
+          game-versions: |
+            1.16.5
+            1.18.2
+            1.19.4
+            1.20.4
+          loaders: |
+            paper
+            spigot
+          changelog: ${{ env.changelog }}
