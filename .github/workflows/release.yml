@@ -41,7 +41,7 @@ jobs:
             if [ -f CHANGELOG.md ]; then
               {
                 echo 'body<<EOF'
-                cat CHANGELOG.md
+                awk "/^## v${{ env.VERSION }}/{found=1; next} /^## v[0-9]/{found=0} found" CHANGELOG.md
                 echo 'EOF'
               } >> $GITHUB_OUTPUT
             else
