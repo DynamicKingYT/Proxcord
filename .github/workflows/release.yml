@@ -1,21 +1,20 @@
-  name: Release Proxcord
+name: Release Proxcord
 
-  on:
-    push:
-      tags:
-        - 'v*'
+on:
+  push:
+    tags:
+      - 'v*'
 
-  permissions:
-    contents: write
+permissions:
+  contents: write
 
-  env:
-    FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
-  jobs:
-    release:
-      runs-on: ubuntu-latest
-
-      steps:
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
         - name: Checkout code
           uses: actions/checkout@v4
           with:
@@ -55,7 +54,7 @@
         - name: Create GitHub Release
           uses: ncipollo/release-action@v1
           with:
-            artifacts: "target/proxcord-free-*.jar,!target/original-*.jar"
+            artifacts: "target/proxcord-free-*.jar"
             body: ${{ steps.changelog.outputs.body }}
             token: ${{ secrets.GITHUB_TOKEN }}
             tag: ${{ github.ref_name }}
@@ -69,7 +68,7 @@
             modrinth-featured: true
             curseforge-id: ${{ secrets.CURSEFORGE_ID }}
             curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
-            files: "target/proxcord-free-*.jar,!target/original-*.jar"
+            files: "target/proxcord-free-*.jar"
             name: "Proxcord Free v${{ env.VERSION }}"
             version: ${{ env.VERSION }}
             version-type: release
