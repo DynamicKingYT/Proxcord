@@ -4,7 +4,7 @@
 **Enterprise-Grade Proximity Voice Chat for Minecraft & Discord**
 
 [![Modrinth](https://img.shields.io/badge/Modrinth-Available-00AF5C?style=for-the-badge&logo=modrinth)](https://modrinth.com/plugin/proxcord)
-[![Paper](https://img.shields.io/badge/Paper-1.21+-gray?style=for-the-badge&logo=paper)](https://papermc.io/)
+[![Paper](https://img.shields.io/badge/Paper-1.16+-gray?style=for-the-badge&logo=paper)](https://papermc.io/)
 [![Wiki](https://img.shields.io/badge/Wiki-Documentation-blue?style=for-the-badge&logo=github)](https://github.com/DynamicKingYT/Proxcord/wiki)
 [![Discord](https://img.shields.io/badge/Discord-Support-7289DA?style=for-the-badge&logo=discord)](https://discord.gg/YOUR_INVITE)
 
