@@ -1,5 +1,14 @@
 # Proxcord Free Changelog
 
+## v1.0.4 - 2026-10-01
+### Added
+- Folia support with region-safe proximity snapshots and player-bound tasks
+- Java 11 build target and Spigot 1.16.5 API compatibility
+
+### Fixed
+- Scheduler compatibility with Folia and standard Paper/Spigot servers
+- Runtime compatibility with Minecraft 1.16 API and Java versions
+
 ## v1.0.3 - 2024-01-20
 ### Added
 - Auto-deployment workflow with GitHub Actions
