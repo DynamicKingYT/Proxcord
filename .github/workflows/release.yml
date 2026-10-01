@@ -20,11 +20,11 @@ jobs:
           with:
             fetch-depth: 0
 
-        - name: Setup Java 21
+        - name: Setup Java 11
           uses: actions/setup-java@v4
           with:
             distribution: 'temurin'
-            java-version: '21'
+            java-version: '11'
             cache: 'maven'
 
         - name: Build with Maven
@@ -60,12 +60,14 @@ jobs:
             tag: ${{ github.ref_name }}
             name: "Proxcord Free v${{ env.VERSION }}"
 
-        - name: Publish to Modrinth & CurseForge
+        - name: Publish to Modrinth, CurseForge & Hangar
           uses: Kir-Antipov/mc-publish@v3.3
           with:
             modrinth-id: ${{ secrets.MODRINTH_ID }}
             modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
             modrinth-featured: true
+            hangar-id: ${{ secrets.HANGAR_ID }}
+            hangar-token: ${{ secrets.HANGAR_TOKEN }}
             curseforge-id: ${{ secrets.CURSEFORGE_ID }}
             curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
             files: "target/proxcord-free-*.jar"
@@ -111,3 +113,10 @@ jobs:
               1.21.11
             loaders: |
               paper
+              hangar
+            dependencies: |
+              # Required dependencies (Project slugs or IDs)
+              modrinth: discordsrv(required)
+              modrinth: geysermc(required)
+              # Optional dependencies
+              modrinth: floodgate(optional)
