@@ -1,12 +1,11 @@
 <div align="center">
 
 # 🎙️ Proxcord
-**Enterprise-Grade Proximity Voice Chat for Minecraft & Discord**
+**True Cross-Play Proximity Voice Chat for Minecraft & Discord**
 
 [![Modrinth](https://img.shields.io/badge/Modrinth-Available-00AF5C?style=for-the-badge&logo=modrinth)](https://modrinth.com/plugin/proxcord)
 [![Paper](https://img.shields.io/badge/Paper-1.16+-gray?style=for-the-badge&logo=paper)](https://papermc.io/)
 [![Wiki](https://img.shields.io/badge/Wiki-Documentation-blue?style=for-the-badge&logo=github)](https://github.com/DynamicKingYT/Proxcord/wiki)
-[![Discord](https://img.shields.io/badge/Discord-Support-7289DA?style=for-the-badge&logo=discord)](https://discord.gg/YOUR_INVITE)
 
 </div>
 
@@ -14,17 +13,17 @@
 
 ## 📖 About Proxcord
 
-**Proxcord** is an advanced bridge between your Minecraft server and your Discord community. It automatically detects when players are near each other in-game and seamlessly moves them into a dedicated proximity voice channel on Discord. 
+**Proxcord** is an advanced bridge between your Minecraft server and your Discord community, designed to solve the biggest problem with proximity chat: **client-side mods.**
 
-Designed with performance in mind, Proxcord handles heavy scanning asynchronously to ensure your server's TPS remains at a perfect 20.0, even with hundreds of players online.
+Most proximity chat solutions require Java players to install heavy mods and completely exclude Bedrock (console/mobile) players. Proxcord automatically detects when players are near each other in-game and dynamically adjusts their volume in a dedicated Discord voice channel. **Zero mods required. Fully cross-play compatible.**
 
 ## 🚀 Key Features
 
-* **⚡ Zero-Lag Architecture:** Off-thread proximity scanning.
-* **🔒 Secure Identity Linking:** Powered by [DiscordSRV](https://modrinth.com/plugin/discordsrv).
-* **🌍 100% Configurable:** Full `messages.yml` support with Hex Colors (`&#FF0000`) and MiniMessage gradients.
-* **🔌 Developer API:** Custom events for other plugins to hook into.
-* **🧩 PlaceholderAPI Ready:** Show linking status directly on your scoreboards.
+* **🚫 100% Mod-Free:** Players just link their Discord. No Fabric, Forge, or external clients needed.
+* **🌍 Cross-Play Ready:** Fully supports Bedrock and Java players via GeyserMC and Floodgate. Xbox, PlayStation, Mobile, and PC players can all hear each other.
+* **⚡ Zero-Lag Architecture:** Off-thread proximity scanning handles heavy calculations asynchronously, keeping your server's TPS at a perfect 20.0.
+* **🔒 Secure Identity Linking:** Powered seamlessly by [DiscordSRV](https://modrinth.com/plugin/discordsrv).
+* **🎨 100% Configurable:** Full `messages.yml` support with Hex Colors (`&#FF0000`) and MiniMessage gradients.
 
 ---
 
@@ -50,12 +49,11 @@ We believe in detailed, high-quality documentation. Everything you need to know 
 
 ---
 
-## 🐛 Bug Reports & Support
+## ⚠️ Developer Note (Please Read)
 
-If you encounter an issue, please open an issue here on GitHub, or join our Discord for faster community support!
+**I am currently a Class 11 student.** I built this plugin to solve a specific problem for the cross-play community, but my PC time is strictly limited due to my studies and upcoming exams. 
 
-* [Report a Bug](https://github.com/DynamicKingYT/Proxcord/issues)
-* [Join the Discord](https://discord.gg/YOUR_INVITE)
+The plugin is stable, but please expect **slow updates and delayed replies** to issues or support tickets. If you find a bug and know how to fix it, Pull Requests are highly appreciated! 
 
 <div align="center">
   <br>
